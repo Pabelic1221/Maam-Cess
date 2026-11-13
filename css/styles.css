@@ -111,3 +111,17 @@ section.s{padding:100px max(22px,7vw);position:relative}
 .finale small{display:block;margin-top:64px;opacity:.5;letter-spacing:.3em;font-size:12px}
 @media (prefers-reduced-motion:reduce){.crown,.gold,#surprise,#winner .tr{animation:none}.crown{opacity:1}html{scroll-behavior:auto}}
 @media (prefers-reduced-motion:reduce){.pap,.mag{animation:none}}
+
+/* First-impression upgrades. Load AFTER styles.css. */
+.cd{font:italic 400 clamp(120px,32vw,300px)/1 "Bodoni Moda","Didot",Georgia,serif;color:#fff;text-shadow:0 0 60px rgba(238,59,74,.85),0 4px 30px #000;animation:cd .85s ease-out both}
+@keyframes cd{0%{transform:scale(1.7);opacity:0}25%{opacity:1}100%{transform:scale(.88);opacity:.85}}
+#mute{display:none;position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:70;width:46px;height:46px;padding:0;align-items:center;justify-content:center;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(13,13,14,.72);backdrop-filter:blur(6px);color:#fff;font-size:19px;letter-spacing:0;text-transform:none}
+#site.on + #mute{display:flex}
+/* light sweep across the headline */
+.hd,.hd span{-webkit-text-fill-color:transparent;background-repeat:no-repeat;background-size:250% 100%,100% 100%;-webkit-background-clip:text;background-clip:text;animation:sweep 6s ease-in-out 1.5s infinite}
+.hd{background-image:linear-gradient(105deg,transparent 38%,rgba(255,255,255,.95) 50%,transparent 62%),linear-gradient(#fff,#fff)}
+.hd span{background-image:linear-gradient(105deg,transparent 38%,rgba(255,255,255,.95) 50%,transparent 62%),linear-gradient(var(--rose),var(--rose))}
+@keyframes sweep{0%{background-position:100% 0,0 0}35%,100%{background-position:0% 0,0 0}}
+/* depth: crowd and figure follow the pointer / phone tilt */
+#crowd{transform:translate(calc(var(--mx,0)*-14px),calc(var(--my,0)*-8px)) scale(1.05);transition:transform .25s ease-out}
+.fig{transform:perspective(900px) rotateY(calc(var(--mx,0)*6deg)) rotateX(calc(var(--my,0)*-3deg));transform-origin:50% 92%;transition:transform .25s ease-out}

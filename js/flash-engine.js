@@ -18,7 +18,7 @@
   function rnd(a, b) { return a + Math.random() * (b - a); }
   function retrigger(el, cls) { if (!el) return; el.classList.remove(cls); void el.offsetWidth; el.classList.add(cls); }
 
-  function cam()  { retrigger(flashEl, "go"); }   // full-screen white flash
+  function cam()  { retrigger(flashEl, "go"); if (window.Sound) Sound.click(1); }   // full-screen white flash + shutter click
   function soft() { retrigger(washEl, "go"); }    // faint screen-wide glow
 
   function pop(x, y, size, dur) {
@@ -38,6 +38,7 @@
     var R = mag ? mag.getBoundingClientRect() : { left: 0, right: 0, top: 0, bottom: 0 };
     if (x > R.left && x < R.right && y > R.top && y < R.bottom) { glint(); return; }
     pop(x, y, size, rnd(.35, .75));
+    if (window.Sound && Math.random() < .1) Sound.click(.12);   // faint crowd clicks
     if (x > R.left - 180 && x < R.right + 180 && y > R.top - 180 && y < R.bottom + 180) glint();
     if (Math.random() < .06 / pace) soft();
   }
