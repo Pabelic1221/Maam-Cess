@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3eee7">
+  <meta name="description" content="A birthday card for Ma’am Cess, Section Head of the Data Management and Information Technology Systems Division (DMITS).">
+  <title>Happy Birthday, Ma’am Cess</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="card-gate" id="card-gate" aria-labelledby="gate-title" hidden>
+    <!-- Replace bubble photos in images/bubbles, or update each bubble img src. -->
+    <div class="photo-bubbles" aria-hidden="true">
+      <span class="photo-bubble bubble-cake"><img src="images/bubbles/birthday-cake.jpg" alt=""></span>
+      <span class="photo-bubble bubble-gift"><img src="images/bubbles/birthday-gift.jpg" alt=""></span>
+      <span class="photo-bubble bubble-balloons"><img src="images/bubbles/birthday-balloons.jpg" alt=""></span>
+      <span class="photo-bubble bubble-toast"><img src="images/bubbles/birthday-toast.jpg" alt=""></span>
+      <span class="photo-bubble photo-bubble-small bubble-confetti"><img src="images/bubbles/birthday-confetti.jpg" alt=""></span>
+      <span class="photo-bubble photo-bubble-small bubble-table"><img src="images/bubbles/birthday-table.jpg" alt=""></span>
+      <span class="photo-bubble photo-bubble-small bubble-cake-extra"><img src="images/bubbles/birthday-cake.jpg" alt=""></span>
+      <span class="photo-bubble photo-bubble-small bubble-gift-extra"><img src="images/bubbles/birthday-gift.jpg" alt=""></span>
+      <span class="photo-bubble photo-bubble-small bubble-toast-extra"><img src="images/bubbles/birthday-toast.jpg" alt=""></span>
+      <span class="photo-bubble photo-bubble-small bubble-confetti-extra"><img src="images/bubbles/birthday-confetti.jpg" alt=""></span>
+      <span class="photo-bubble photo-bubble-small bubble-balloons-extra"><img src="images/bubbles/birthday-balloons.jpg" alt=""></span>
+      <span class="photo-bubble photo-bubble-small bubble-table-extra"><img src="images/bubbles/birthday-table.jpg" alt=""></span>
+      <span class="photo-bubble photo-bubble-small bubble-gift-upper"><img src="images/bubbles/birthday-gift.jpg" alt=""></span>
+      <span class="photo-bubble photo-bubble-small bubble-cake-upper"><img src="images/bubbles/birthday-cake.jpg" alt=""></span>
+      <span class="photo-bubble photo-bubble-small bubble-toast-side"><img src="images/bubbles/birthday-toast.jpg" alt=""></span>
+      <span class="photo-bubble photo-bubble-small bubble-balloons-side"><img src="images/bubbles/birthday-balloons.jpg" alt=""></span>
+    </div>
+    <div class="gate-content">
+      <p class="gate-kicker">Birthday greetings</p>
+      <h1 class="gate-title" id="gate-title">Happy Birthday,<span>Ma’am Cess</span></h1>
+      <p class="gate-subtitle">A birthday card for our Section Head</p>
+      <button class="envelope" id="open-card" type="button" aria-label="Click to open your birthday card for Ma’am Cess" aria-expanded="false">
+        <span class="envelope-back" aria-hidden="true"></span>
+        <span class="letter-preview" aria-hidden="true">
+          <span>Birthday wishes</span>
+          <strong>For Ma’am Cess</strong>
+          <span>DMITS</span>
+        </span>
+        <span class="envelope-front" aria-hidden="true"></span>
+        <span class="envelope-flap" aria-hidden="true"></span>
+        <span class="envelope-label" aria-hidden="true"><span class="envelope-cta">Click to Open Surprise <span aria-hidden="true">↗</span></span><small>DMITS</small></span>
+        <span class="envelope-seal" aria-hidden="true">C</span>
+      </button>
+      <p class="gate-instruction">Select the envelope to read your birthday message</p>
+    </div>
+  </section>
+
+
+
+  <main class="page-shell">
+    <header class="topbar">
+      <div class="brand">DMITS</div>
+      <div class="top-note">Created with Love and a little bit of code</div>
+    </header>
+
+    <section class="hero" aria-labelledby="birthday-title">
+      <article class="letter-paper">
+        <div class="letter-topline">
+          <span>A birthday letter</span>
+          <span>With appreciation</span>
+        </div>
+        <div class="letter-copy">
+          <p class="salutation">Dear Ma’am Cess,</p>
+          <h1 id="birthday-title">Happy Birthday,<span class="accent">Ma’am Cess.</span></h1>
+          <p class="hero-text">On behalf of the Data Management and Information Technology Systems Division (DMITS), please accept our warmest wishes on your birthday. Thank you for your guidance, thoughtful leadership, and continued support.</p>
+          <p class="hero-text">Your commitment and encouragement make a meaningful difference in our work. We hope the year ahead brings you good health, happiness, and continued success.</p>
+          <p class="hero-text">Wishing you a joyful celebration and a wonderful year ahead.</p>
+          <p class="letter-signoff">With appreciation,<strong>DMITS</strong></p>
+          <div class="hero-actions">
+            <button class="celebrate-button" id="celebrate-button" type="button">Celebrate with confetti</button>
+            <a class="scroll-cue" href="#birthday-gallery">Continue to birthday photos ↓</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="gallery-section" id="birthday-gallery" aria-labelledby="gallery-title">
+      <div class="gallery-heading">
+        <div>
+          <span class="note-kicker">Birthday gallery</span>
+          <h2 id="gallery-title">A day worth<br>celebrating.</h2>
+        </div>
+        <p>A few birthday photos and wishes for Ma’am Cess.</p>
+      </div>
+      <!-- Replace these files in the images folder, or update each img src to a different photo. -->
+      <div class="photo-grid">
+        <figure class="photo-card">
+          <img src="images/1.jpg" alt="Birthday cake with candles lit for a celebration" loading="eager">
+          <figcaption class="photo-label">Make a wish, Ma’am Cess</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="images/2.jpg" alt="Brightly wrapped birthday gift with a ribbon" loading="eager">
+          <figcaption class="photo-label">A little something to celebrate</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="images/3.jpg" alt="Colorful balloons gathered for a birthday party" loading="eager">
+          <figcaption class="photo-label">Let the celebration begin</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="images/4.jpg" alt="Colorful confetti falling over a party" loading="eager">
+          <figcaption class="photo-label">Cheers to another wonderful year</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="images/5.jpg" alt="Festive table arranged with flowers and lights" loading="eager">
+          <figcaption class="photo-label">Good company and happy moments</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="images/6.jpg" alt="Guests raising glasses at a celebration" loading="eager">
+          <figcaption class="photo-label">Wishing you many reasons to celebrate</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>With appreciation</span>
+      <span>DMITS</span>
+    </footer>
+  </main>
+
+  <dialog id="birthday-dialog" aria-labelledby="dialog-title">
+    <h2 id="dialog-title">Happy Birthday, Ma’am Cess</h2>
+    <p>Wishing you a wonderful birthday and a year ahead filled with happiness, good health, and continued success.</p>
+    <button class="close-button" id="close-dialog" type="button">Thank you</button>
+  </dialog>
+
+  <script>
+    const cardGate = document.querySelector("#card-gate");
+    const openCardButton = document.querySelector("#open-card");
+    const pageShell = document.querySelector(".page-shell");
+    const celebrateButton = document.querySelector("#celebrate-button");
+    const birthdayDialog = document.querySelector("#birthday-dialog");
+    const closeDialog = document.querySelector("#close-dialog");
+    const confettiColors = ["#f07181", "#f5c26b", "#8ec9b2", "#8c78b3", "#fff0ce"];
+
+    function launchConfetti(count = 70) {
+      for (let index = 0; index < count; index += 1) {
+        const piece = document.createElement("span");
+        piece.className = "confetti-piece";
+        piece.setAttribute("aria-hidden", "true");
+        piece.style.left = `${Math.random() * 100}vw`;
+        piece.style.backgroundColor = confettiColors[index % confettiColors.length];
+        piece.style.setProperty("--drift", `${(Math.random() - 0.5) * 240}px`);
+        piece.style.setProperty("--spin", `${Math.random() * 720 - 360}deg`);
+        piece.style.animationDelay = `${Math.random() * 0.8}s`;
+        document.body.append(piece);
+        window.setTimeout(() => piece.remove(), 3700);
+      }
+    }
+
+    const bubblePopTimers = new WeakMap();
+
+    function finishBubblePop(bubble) {
+      window.clearTimeout(bubblePopTimers.get(bubble));
+      bubblePopTimers.delete(bubble);
+      bubble.classList.remove("is-popping");
+    }
+
+    function popBubble(bubble) {
+      if (bubble.classList.contains("is-popping")) return;
+      bubble.classList.add("is-popping");
+      const timeout = window.setTimeout(
+        () => finishBubblePop(bubble),
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 50 : 3500
+      );
+      bubblePopTimers.set(bubble, timeout);
+    }
+
+    document.querySelectorAll(".photo-bubble").forEach((bubble) => {
+      bubble.addEventListener("mouseenter", () => popBubble(bubble));
+      bubble.addEventListener("pointerdown", (event) => {
+        if (event.pointerType !== "mouse") popBubble(bubble);
+      });
+      bubble.addEventListener("animationend", (event) => {
+        if (event.target === bubble && event.animationName === "photo-bubble-cycle") {
+          finishBubblePop(bubble);
+        }
+      });
+    });
+
+    function openBirthdayCard() {
+      openCardButton.classList.add("is-open");
+      openCardButton.setAttribute("aria-expanded", "true");
+      launchConfetti(100);
+
+      window.setTimeout(() => {
+        document.body.classList.add("card-revealed");
+        document.body.classList.remove("card-closed");
+        pageShell.setAttribute("aria-hidden", "false");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }, 700);
+
+      window.setTimeout(() => cardGate.classList.add("is-opening"), 1250);
+      window.setTimeout(() => { cardGate.hidden = true; }, 1950);
+    }
+
+    cardGate.hidden = false;
+    document.body.classList.add("card-closed");
+    pageShell.setAttribute("aria-hidden", "true");
+    openCardButton.addEventListener("click", openBirthdayCard);
+    celebrateButton.addEventListener("click", () => {
+      launchConfetti();
+      birthdayDialog.showModal();
+    });
+    closeDialog.addEventListener("click", () => birthdayDialog.close());
+    birthdayDialog.addEventListener("click", (event) => {
+      if (event.target === birthdayDialog) birthdayDialog.close();
+    });
+  </script>
+</body>
+</html>
