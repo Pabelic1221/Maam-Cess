@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="A red-carpet birthday greeting."><meta name="theme-color" content="#0d0d0e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%8E%82%3C/text%3E%3C/svg%3E">
+<title>Happy Birthday!</title>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Limelight&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;1,6..96,400&family=Italiana&family=Syne:wght@700;800&family=Poiret+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/config.js" defer></script>
+<script src="js/confetti.js" defer></script>
+<script src="js/flash-engine.js" defer></script>
+<script src="js/main.js" defer></script>
+</head>
+<body>
+<canvas id="fx" aria-hidden="true"></canvas>
+<div id="flash"></div><div id="wash"></div>
+<div id="crowd" aria-hidden="true"></div>
+<div id="flares" aria-hidden="true"></div>
+
+<div id="gate">
+  <div class="gatein">
+    <div class="kick">NOVEMBER 13 · FOR YOU</div>
+    <h1>Your red carpet<br>birthday awaits</h1>
+    <button class="btn" id="surprise">Surprise me</button>
+  </div>
+</div>
+
+<div id="site">
+  <header class="hero">
+    <div class="panel">
+      <div class="nav"><a class="brand" href="#">Red Ball</a>
+        <nav aria-label="Sections"><a class="on" href="#">Home</a><a href="#invite">Greeting</a><a href="#gallery">Gallery</a><a href="#toasts">Toasts</a><a href="#end">Reveal</a></nav>
+        <span class="dots" aria-hidden="true"></span></div>
+      <h1 class="hd">Step Into the Spotlight. Own the Night.<span>Happy Birthday, <b id="title" style="font-weight:400">Ma’am</b>.</span></h1>
+      <div class="bub b1"><img src="assets/img/gallery-1.jpg" alt="Smiling in a white blouse" style="object-position:50% 18%"></div>
+      <div class="bub b2"><img src="assets/img/gallery-2.jpg" alt="Hand on her cheek, smiling" style="object-position:50% 25%"></div>
+      <p class="tx t1">Where glamour meets celebration — every flash, every frame and every wish is for you tonight.</p>
+      <p class="tx t2">From your whole team: we turned every camera toward you. Tap the arrow to open your birthday greeting.</p>
+      <button id="more" aria-label="Open your greeting"><svg viewBox="0 0 100 100" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4"><polygon points="98,50 91.6,74 74,91.6 50,98 26,91.6 8.4,74 2,50 8.4,26 26,8.4 50,2 74,8.4 91.6,26"/><path d="M50 34V64M38.5 53.5L50 65L61.5 53.5" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <div class="fig" id="mag"><img src="assets/img/figure.webp" alt="Our guest of honor standing on the red carpet in a sparkling silver gown" fetchpriority="high" decoding="async"></div>
+    </div>
+  </header>
+
+  <section class="s" id="invite">
+    <div class="head"><div class="kick">WITH LOVE FROM YOUR TEAM</div></div>
+    <div class="invite">
+      <div class="kick">A GREETING FROM THE HEART</div>
+      <h3>Happy Birthday!</h3>
+      <p class="msg">Dear <span id="who">Ma’am</span>,</p>
+      <p class="msg">Thank you for leading us with grace, patience and a steady hand. You make hard days feel manageable, and you make us want to do our best work.</p>
+      <p class="msg">May this new year bring you good health, lovely surprises, a little less urgent work and a lot more cake.</p>
+      <p class="msg">You deserve every flash of the spotlight today. We are so proud to have you as our IT supervisor.</p>
+      <div class="sig">With all our love, your team</div>
+    </div>
+  </section>
+
+  <section class="s gallery" id="gallery">
+    <div class="head"><div class="kick">THE SOCIETY PAGES</div><h2>Elegance, in every frame</h2></div>
+    <div class="gal">
+      <figure><div class="pf"><img src="assets/img/gallery-1.jpg" loading="lazy" decoding="async" alt="Smiling in a white blouse" style="object-position:50% 20%"></div><figcaption>ALWAYS POISED</figcaption></figure>
+      <figure><div class="pf"><img src="assets/img/gallery-2.jpg" loading="lazy" decoding="async" alt="Hand on her cheek, smiling"></div><figcaption>SHARP AND KIND</figcaption></figure>
+      <figure><div class="pf"><img src="assets/img/gallery-3.jpg" loading="lazy" decoding="async" alt="Festive family photo in red and white" style="object-position:30% 30%"></div><figcaption>JOY IN EVERY SEASON</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="s" id="toasts">
+    <div class="head"><div class="kick">RAISE YOUR GLASS</div><h2>Toasts from the team</h2></div>
+    <div class="toasts">
+      <div class="t"><em>🥂</em><p>Thank you for trusting us with the big things, and staying calm when the server didn’t.</p><span>THE DEV TEAM</span></div>
+      <div class="t"><em>🥂</em><p>You lead with grace and make hard days feel doable. We’re lucky to have you.</p><span>DMITS FAMILY</span></div>
+      <div class="t"><em>🥂</em><p>Wishing you good health, lovely surprises and zero 3 a.m. alerts.</p><span>THE CHIO FAMILY</span></div>
+    </div>
+  </section>
+
+  <section class="finale" id="end">
+    <div class="kick">ONE LAST TOAST</div>
+    <h2>Today, we all raise a glass to…</h2>
+    <button class="btn" id="open">Reveal</button>
+    <div id="winner" hidden>
+      <span class="tr" aria-hidden="true">🥂</span>
+      <span class="gold" id="win">Ma’am!</span>
+      <p>Happy birthday, from all of us. Thank you for everything you do.</p>
+    </div>
+    <small>MADE WITH LOVE BY YOUR TEAM</small>
+  </section>
+</div>
+</body>
+</html>
